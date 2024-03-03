@@ -13,7 +13,7 @@ Body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 790px;
+    min-height: 100vh;
     font-family: "Hanken Grotesk", sans-serif;
 }
 
@@ -142,4 +142,60 @@ img4 {
     color: white;
     border: none;
     margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.numero {
+    font-weight: 700;
+}
+
+span {
+    color: rgba(46, 45, 45, 0.486);
+    font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        flex-direction: column;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .bordaesquerda {
+        width: 100%;
+        margin-top: -10px;
+        border-radius: 0px 0px 50px 50px;
+        box-shadow: none;
+        background-color: white;
+        align-items: center;
+    }
+
+    .bolafundo {
+        width: fit-content;
+        height: 120px;
+        padding: 30px;
+        margin-left: 0px;
+        /* border-radius: 50%; */
+    }
+
+    .bordadireita {
+        background-color: white;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .button {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: min-content;
+        font-size: 18px;
+        border-radius: 25px;
+        margin-top: 10px;
+    }
 }
